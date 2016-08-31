@@ -32,7 +32,7 @@ In another word, it provides a simplified interface for clients to subsystem's f
 A good advantage is if subsystem code changed, the client code doesn't need to change, only facade.
 
 # Best Practices
-## The Principle of Lease Knowledge
+### The Principle of Lease Knowledge
 We should only invoke methods that belongs to:
 * The object itself
 * Objects passed in as a parameter
@@ -61,9 +61,9 @@ public class Car {
 }
 ```
 
-## The Hollywood Principle
+### The Hollywood Principle
 Low-level components can hook into a system, but High-level components determine when they are called. In the CaffineBeverage class, the high level is the abstract class since it controls the algorithm. 
 
-### Hollywoord Principle vs Dependency Inversion
+#### Hollywoord Principle vs Dependency Inversion
 The **Dependency Inversion Principle** teaches us to avoid the use of concrete classes and instead work as much as possible with abstractions. The **Hollywood Principle** is a technique for building frameworks or components so that lower-level components can be hooked into the computation, but without creating dependencies between the lower-level components and the higher-level layers. So, they both have the goal of decoupling, but the **Dependency Inversion** makes a much stronger and general statement about how to avoid dependencies in design. The **Hollywood Principle** gives us a technique for creating designs that allow low-level structures to interoperate while preventing other classes from becoming too dependent on them. 
 
