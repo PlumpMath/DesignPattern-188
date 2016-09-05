@@ -22,7 +22,7 @@ public class MenuItem {
 	}
 
 	public void setPrice(BigDecimal price) {
-		this.price = price;
+		this.price = price.setScale(2, RoundingMode.HALF_DOWN);
 	}
 
 	public String getName() {

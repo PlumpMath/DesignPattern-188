@@ -40,7 +40,7 @@ A good advantage is if subsystem code changed, the client code doesn't need to c
 ### Strategy Pattern
 
 # Best Practices
-### The Principle of Lease Knowledge
+### The Principle of Least Knowledge
 We should only invoke methods that belongs to:
 * The object itself
 * Objects passed in as a parameter
